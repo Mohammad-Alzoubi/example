@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .grid {
+            display: grid;
+            /* grid-template-columns: 200px auto 200px; */
+            /* grid-template-columns: repeat(3, 200px); */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 0.1rem;
+        }
+
+        .item{
+            background: #aaa;
+            /* margin: 0.1rem; */
+            padding: 0.5rem;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+
+        main{
+            display: grid;
+            grid-template-columns: 3fr 3fr;
+            grid-gap: 0.5rem;
+
+        }
+        .content {
+
+            background: #33aa;
+            /* padding: 0.75rem;
+            margin-top: 0.5rem; */
+        }
+
+        .sidebar {
+            background: coral;
+            /* padding: 0.75rem;
+            margin-top: 0.5rem; */
+            
+        }
+
+
+        footer{
+            background: pink;
+            padding: 0.75rem;
+            margin: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">Item 1</div>
+        <div class="item">Item 1</div>
+        <div class="item">Item 1</div>
+        <div class="item">Item 1</div>
+        <div class="item">Item 1</div>
+        <div class="item">Item 1</div>
+    </div>
+    <main>
+        <section class="content">
+            <h3>this is main aside</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati eum tenetur quae accusantium ea laborum libero fuga, exercitationem, unde veniam, ratione nulla consequuntur enim explicabo. Ab officiis expedita reprehenderit facere.</p>
+        </section>
+        <aside class="sidebar">
+            <h3>this is main aside</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati eum tenetur quae accusantium ea laborum libero fuga, exercitationem, unde veniam, ratione nulla consequuntur enim explicabo. Ab officiis expedita reprehenderit facere.</p>
+        </aside>
+    </main>
+    <footer >
+        <section class="footerContent">
+            <h3>asdfsdf</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, veniam! Quis consequatur pariatur, cupiditate quia aliquam ipsa. Exercitationem necessitatibus iure iusto! Cum, numquam tempore debitis cupiditate quasi inventore vero natus?</P>
+        </section>
+
+    </footer>
+</body>
+</html>
